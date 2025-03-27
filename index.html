@@ -933,25 +933,22 @@
       </p>
       <div class="form-wrapper scroll-into-view">
         <div class="form-block w-form">
-          <form data-name="Register Form" data-wf-element-id="4fd26682-e3e8-c963-f969-84351ccf8bba" data-wf-page-id="66299d1a1690bfb1adcf1bf6" id="wf-form-Register-Form" method="get" name="wf-form-Register-Form">
+          <form action="https://formspree.io/f/mwkyykzq" method="POST">
             <label class="field-label" for="First-Name">
               First Name
             </label>
             <input class="text-field w-input" data-name="First Name" id="First-Name" maxlength="256" name="First-Name"
               placeholder="" type="text" required />
-
             <label class="field-label" for="Last-Name">
               Last Name
             </label>
             <input class="text-field w-input" data-name="Last Name" id="Last-Name" maxlength="256" name="Last-Name"
               placeholder="" type="text" required />
-
             <label class="field-label" for="Email-4">
               Email Address
             </label>
             <input class="text-field w-input" data-name="Email" id="Email-4" maxlength="256" name="Email" placeholder=""
               required type="email" />
-
             <label class="field-label" for="Ticket-Choice">
               Select your ticket type
             </label>
@@ -962,13 +959,11 @@
               <option value="VIP">VIP Access</option>
               <option value="Student">Student Ticket</option>
             </select>
-
             <label class="field-label" for="Message">
               Special Requests
             </label>
             <textarea class="text-field w-input" data-name="Special Requests" id="Special-Requests"
               name="Special-Requests" placeholder="Any special dietary requirements or requests?" rows="4"></textarea>
-
             <div class="form-checkbox-wrapper">
               <label class="w-checkbox">
                 <input class="w-checkbox-input" data-name="Newsletter Subscription" id="Newsletter-Subscription"
@@ -978,7 +973,6 @@
                 </span>
               </label>
             </div>
-
             <input class="button form-button w-button" data-wait="Please wait..." type="submit" value="Register Now" />
           </form>
           <div class="success-message w-form-done">
@@ -1026,13 +1020,13 @@
             Sign-up for updates
           </h4>
           <div class="w-form">
-            <form class="sign-up-form" data-name="Sign-Up Form"
-              data-wf-element-id="b4c91bee-834d-d4ce-52f2-000f0ac1f9c4" data-wf-page-id="6621bbf832b5e6f52b094df1"
-              id="wf-form-Sign-Up-Form" method="get" name="wf-form-Sign-Up-Form">
+            <div class="sign-up-form" data-name="Sign-Up Form" data-wf-element-id="b4c91bee-834d-d4ce-52f2-000f0ac1f9c4"
+              data-wf-page-id="6621bbf832b5e6f52b094df1" id="wf-form-Sign-Up-Form" onsubmit="handleSignUpSubmit(event)">
               <input class="text-field sign-up-field w-input" data-name="Sign-Up Email" id="Sign-Up-Email"
                 maxlength="256" name="Sign-Up-Email" placeholder="Your email" required="" type="email" />
-              <input class="button-arrow w-button" data-wait="Please wait..." type="submit" value="" />
-            </form>
+              <input class="button-arrow w-button" data-wait="Please wait..." type="button" value="Sign Up"
+                onclick="handleSignUpSubmit(event)" />
+            </div>
             <div class="success-message w-form-done">
               <div>
                 Thank you! Your submission has been received!
